@@ -1,0 +1,8 @@
+fastapi
+requests
+pytest
+flake8
+graphene
+starlette
+streamlit
+pep8
