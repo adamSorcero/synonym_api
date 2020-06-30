@@ -3,6 +3,29 @@
 
 This repo aims to act as a template for starting API First projects, with the aim of ensuring we are building our tools with deployment and usability in mind at the first steps.
 
+# Files 
+
+# graph_api.py
+
+This is the graphql Query api class. This doesn't need running by itself, but it references by server.py
+
+# server.py
+
+This is the fast api server which you run with uvicorn to provide the api interface using
+
+```
+uvicorn server:app --reload --port <PORT>
+```
+
+# interface/demo.py
+
+The streamlit interface which contains a class to access the graphql server and a very simple interface to query the graphql api.
+
+you can run it using 
+
+streamlit run demo.py
+
+# Ideas
 Ideally all new modules should have:
 
 1. A docker images for easy building and deploying with 2 commands
